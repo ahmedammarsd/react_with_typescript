@@ -1,5 +1,8 @@
 import "./App.css";
+import Heading from "./components/Heading";
+import Layout from "./components/Layout";
 import SayHallo from "./components/SayHallo";
+import Status from "./components/Status";
 
 function App() {
   const dummyData = {
@@ -24,6 +27,12 @@ function App() {
   return (
     <>
       <SayHallo name={"ahmed"} age={24} someData={dummyData} users={users} />
+      <hr />
+      <Status status="success" />
+      <hr />
+      <Layout>
+        <Heading />
+      </Layout>
     </>
   );
 }
