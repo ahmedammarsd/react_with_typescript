@@ -8,6 +8,9 @@ import Status from "./components/Status";
 import Input from "./components/Input";
 import Container from "./components/Container";
 import Products from "./components/Products";
+import Loggedin from "./components/Loggedin";
+import User from "./components/User";
+import Counter from "./components/Counter";
 
 function App() {
   const dummyData = {
@@ -97,6 +100,21 @@ function App() {
       <br />
       <p>Lesson 9 - Export Types</p>
       <Products productsData={dummyProductsData} />
+      {/* ====================================================== */}
+      <hr />
+      <br />
+      <p>Lesson 10 - useState</p>
+      <Loggedin />
+      {/* ====================================================== */}
+      <hr />
+      <br />
+      <p>Lesson 11 - useState Future Value</p>
+      <User />
+      {/* ====================================================== */}
+      <hr />
+      <br />
+      <p>Lesson 13 - useReducer</p>
+      <Counter />
     </>
   );
 }
